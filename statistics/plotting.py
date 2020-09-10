@@ -2,6 +2,10 @@ from matplotlib import pyplot
 from numpy import arange
 import bisect
 
+''''
+Wrapper class with Graph plotting functions 
+'''
+
 def scatterplot(x,y):
     pyplot.plot(x,y,'b.')
     pyplot.xlim(min(x)-1,max(x)+1)

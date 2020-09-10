@@ -43,4 +43,8 @@ if True:
 	
 	if False:
 		print(histplot(Height, None, 5))
-	print(scatterplot(Height, Weight))
+
+	if False:
+		print(barchart(Height, Weight))
+	else:
+		print(scatterplot(Height, Weight))

@@ -1,6 +1,7 @@
 data1=[49., 66, 24, 98, 37, 64, 98, 27, 56, 93, 68, 78, 22, 25, 11]
 data2=[1,2,5,10,-20]
 data3=[1,2,5,10,-20,5,5]
+data4=[13.04, 1.32, 22.65, 17.44, 29.54, 23.22, 17.65, 10.12, 26.73, 16.43]
 
 # Return the mean value of a list of numbers 
 # which can be also used to represent
@@ -27,4 +28,10 @@ def mode(data):
             modecnt = icount
     return mode
 
-print(mode(data3))
+# Return the variance of a list of numbers
+# hence the data spread
+def variance(data):
+    mu = mean(data)
+    return mean([(x - mu) ** 2 for x in data])
+
+print(variance(data4))

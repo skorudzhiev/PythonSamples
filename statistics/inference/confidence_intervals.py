@@ -16,4 +16,12 @@ def factor(l):
 def conf(l):
     return factor(l) * sqrt(var(l) / len(l))
 
+# Function of a Hypothesis test example
+def test(l, h):
+    m = mean(l)
+    c = conf(l)
+    return abs(h - m) <= c
+
+print(mean(l))
 print(conf(l))
+print(test(l, h))
